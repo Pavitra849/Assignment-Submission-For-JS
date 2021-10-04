@@ -1,0 +1,15 @@
+Q1:Ans
+var and let are both used for variable declaration in javascript,
+but the difference between them is that var is function scoped and let is block scoped.
+It can be said that a variable declred with var is defined throughout the program as compared to let.
+
+Q2:Ans
+The tyoeof an array is an object.In javascript arrays are technically objects;just with special behaviours and abilities.
+For example,arrays have a Array.prototype.length property,which will return the number of elements in the array.
+Arrays also have special methods, e.g. Array.prototype.push() or Array.prototype.unshift().
+To differentiate an Array object from an Object object, we can use the Array.isArray() method.
+
+The null value is technically a primitive, the way "object" or "number" are primitives. This would typically mean that the type of null should also be "null". 
+However, this is not the case because of a peculiarity with the way JavaScript was first defined.
+In the first implementation of JavaScript, values were represented in two parts - a type tag and the actual value. There were 5 type tags that could be used, and the tag for referencing an object was 0. 
+The null value, however, was represented as the NULL pointer, which was 0x00 for most platforms. As a result of this similarity, null has the 0 type tag, which corresponds to an object.
